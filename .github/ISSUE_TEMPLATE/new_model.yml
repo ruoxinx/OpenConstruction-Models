@@ -1,7 +1,7 @@
 name: "🤖 New Model Submission"
 description: Submit a new model to the OpenConstruction Model Catalog
 title: "[Model] "
-labels: ["model", "submission"]
+labels: ["model"]
 body:
   - type: input
     id: name
