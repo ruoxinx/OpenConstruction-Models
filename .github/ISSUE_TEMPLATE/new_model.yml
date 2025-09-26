@@ -45,3 +45,8 @@ body:
     attributes:
       label: Release Year
       placeholder: e.g., 2025
+  - type: textarea
+    id: labels
+    attributes:
+      label: Suggested Labels/Tags
+      placeholder: e.g., baseline, benchmark, multimodal
