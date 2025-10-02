@@ -13,7 +13,7 @@ body:
         Please provide enough detail so others can reproduce or learn from this use case.
         **At least one credible source link is required** (case study / owner report / peer-reviewed paper / reputable vendor page).
 
-  # --- Core fields (map directly to data/use-cases.json) ---
+  # --- Core fields ---
   - type: input
     id: title
     attributes:
