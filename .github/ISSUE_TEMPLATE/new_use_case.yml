@@ -57,7 +57,7 @@ body:
         - label: "Trade"
         - label: "Supplier"
         - label: "Inspector"
-        - label: "FM"
+        - label: "Facility manager"
     validations:
       required: false
 
