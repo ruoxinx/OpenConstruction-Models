@@ -2,6 +2,7 @@ name: "🤖 New Model Submission"
 description: Submit a new model to the OpenConstruction Model Catalog
 title: "[Model] "
 labels: ["model"]
+
 body:
   - type: input
     id: name
@@ -10,6 +11,7 @@ body:
       placeholder: e.g., FM-Vision-Eval Transformer
     validations:
       required: true
+
   - type: textarea
     id: description
     attributes:
@@ -17,6 +19,31 @@ body:
       placeholder: Brief description of the model and intended tasks
     validations:
       required: true
+
+  - type: input
+    id: authors
+    attributes:
+      label: Authors
+      placeholder: e.g., Ruoxin Xiong, Pingbo Tang
+
+  - type: input
+    id: paper
+    attributes:
+      label: Related Paper
+      placeholder: e.g., Knowledge-Embedded Human-Machine Adaptation for Efficient Building Manufacturing Operations
+
+  - type: input
+    id: doi
+    attributes:
+      label: DOI
+      placeholder: e.g., 10.1016/j.autcon.2024.105678
+
+  - type: input
+    id: license
+    attributes:
+      label: License
+      placeholder: e.g., Apache 2.0
+
   - type: input
     id: url
     attributes:
@@ -24,6 +51,7 @@ body:
       placeholder: Link to code or pre-trained weights
     validations:
       required: true
+
   - type: dropdown
     id: tasks
     attributes:
@@ -34,19 +62,17 @@ body:
         - Detection
         - Segmentation
         - Activity Recognition
+        - Generation
         - Other
-  - type: input
-    id: license
-    attributes:
-      label: License
-      placeholder: e.g., Apache 2.0
+
   - type: input
     id: year
     attributes:
       label: Release Year
       placeholder: e.g., 2025
+
   - type: textarea
-    id: labels
+    id: additional_information
     attributes:
-      label: Suggested Labels/Tags
-      placeholder: e.g., baseline, benchmark, multimodal
+      label: Additional Information
+      placeholder: e.g., Trained with multimodal inputs; compatible with ONNX and TensorRT
