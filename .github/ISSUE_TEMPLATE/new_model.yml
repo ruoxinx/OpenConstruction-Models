@@ -24,19 +24,19 @@ body:
     id: authors
     attributes:
       label: Authors
-      placeholder: e.g., Ruoxin Xiong, Pingbo Tang
+      placeholder: 
 
   - type: input
     id: paper
     attributes:
       label: Related Paper
-      placeholder: e.g., Knowledge-Embedded Human-Machine Adaptation for Efficient Building Manufacturing Operations
+      placeholder: e.g., paper title
 
   - type: input
     id: doi
     attributes:
       label: DOI
-      placeholder: e.g., 10.1016/j.autcon.2024.105678
+      placeholder: 
 
   - type: input
     id: license
@@ -63,6 +63,7 @@ body:
         - Segmentation
         - Activity Recognition
         - Generation
+        - NLP
         - Other
 
   - type: input
@@ -75,4 +76,4 @@ body:
     id: additional_information
     attributes:
       label: Additional Information
-      placeholder: e.g., Trained with multimodal inputs; compatible with ONNX and TensorRT
+      placeholder: 
